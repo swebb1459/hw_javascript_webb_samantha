@@ -1,8 +1,8 @@
-function howdy(firstName, lastName) {
-    return firstName + ' ' + lastName + ' says hey!';
+function howdy() {
+    return 'Samantha Webb says hey!';
 }
 
-console.log( howdy('Samantha', 'Webb') );
+console.log( howdy() );
 
 var numba = function(string) {
     if (string.length < 7) {
@@ -19,3 +19,9 @@ console.log( numba('7') );
 console.log( numba('seventy') ) ;
 
 console.log( numba('university') );
+
+function inception(callback, value) {
+    callback(value);
+}
+
+inception( function(movie) { console.log( movie + ' is a fantastic movie.' ); }, 'Pitch Perfect' );
