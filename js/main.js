@@ -22,4 +22,6 @@ function inception(callback, value) {
     callback(value);
 }
 
-inception( function(movie) { console.log( movie + ' is a fantastic movie.' ); }, 'Pitch Perfect' );
+function logMovie(movie) { console.log( movie + ' is a fantastic movie.' ); }
+
+inception( logMovie, 'Pitch Perfect' );
