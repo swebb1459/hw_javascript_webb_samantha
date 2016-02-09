@@ -14,14 +14,14 @@ var numba = function(string) {
     }
 };
 
-console.log( numba('7') );
-
-console.log( numba('seventy') ) ;
-
-console.log( numba('university') );
+numba('7');
+numba('seventy') ;
+numba('university');
 
 function inception(callback, value) {
     callback(value);
 }
 
-inception( function(movie) { console.log( movie + ' is a fantastic movie.' ); }, 'Pitch Perfect' );
+function logMovie(movie) { console.log( movie + ' is a fantastic movie.' ); }
+
+inception( logMovie, 'Pitch Perfect' );
